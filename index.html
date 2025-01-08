@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/myclinic/libs/css/bootstrap.css">
+    <link rel="stylesheet" href="/myclinic/libs/css/font-awesome.min.css">
+    <style>
+        body {
+            height: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            background-color: #f5f5f5;
+        }
+        .card-signin {
+            border: 1px solid #a7d2a; /* 设置边框颜色 */
+            border-radius: 10px; /* 设置边框圆角 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+            background-color: #ffffff; /* 设置背景颜色 */
+            padding: 20px; /* 设置内边距 */
+            max-width: 420px; /* 设置最大宽度 */
+            margin: auto; /* 水平居中 */
+        }
+        .form-signin {
+            width: 100%;
+        }
+        .form-label-group {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+.form-label-group > input,
+.form-label-group > label {
+    height: 3.125rem;
+    padding: .75rem;
+}
+
+.form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default `<label>` margin */
+    line-height: 1.5;
+    color: #495057;
+    pointer-events: none;
+    cursor: text; /* Match the input under the label */
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::moz-placeholder {
+    color: transparent;
+}
+
+.form-label-group input::placeholder {
+    color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+    padding-top: 1.25rem;
+    padding-bottom: .25rem;
+}
+.form-label-group input:not(:placeholder-shown) ~ label {
+        padding-top: .25rem;
+        padding-bottom: .25rem;
+        font-size: 12px;
+        color: #777;
+    }
+</style>
+
+<title>Hello, world!</title>
+<meta name="theme-color" content="#563d7c">
+<script src="chrome-extension://ekkkldemlnhacnregfdihalleglbhml/js/page_finish.js"></script>
+
+<body flex>
+<div class="card-signin">
+    <form class="form-signin" method="post" action="toLogin">
+        <div class="text-center mb-4">
+            <i class="fa fa-h-square fa-5x" aria-hidden="true" style="color: #a71d2a; padding-bottom: 10px;"></i>
+            <h1 class="h3 mb-3 font-weight-normal">门急诊信息管理系统</h1>
+            <p><code>Hospital Information System</code></p>
+        </div>
+        <div class="form-label-group">
+            <input type="text" id="inputstaffid" class="form-control" name="username" placeholder="工号" required autofocus>
+            <label for="inputstaffid">工号</label>
+        </div>
+        <div class="form-label-group">
+            <input type="password" id="inputPassword" class="form-control" name="password" placeholder="密码" required>
+            <label for="inputPassword">密码</label>
+        </div>
+        <div class="checkbox mb-3">
+            <label>== $0
+                <input type="checkbox" value="remember-me"> " 记住我 "
+</label>
+</div>
+<button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+<p class="mt-5 mb-3 text-muted text-center"></p>
+</form>
+</div>
+<!-- Bootstrap core JavaScript -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/myclinic/libs/js/jquery-3.3.1.min.js"></script>
+<script src="/myclinic/libs/js/popper.min.js"></script>
+<script src="/myclinic/libs/js/bootstrap.min.js"></script>
+</body>
+</html>
